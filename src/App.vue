@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-full">
+  <div class="min-h-screen flex flex-col">
     <div class="bg-indigo-600 pb-32">
       <Disclosure
         v-slot="{ open }"
@@ -192,10 +192,12 @@
       </header>
     </div>
 
-    <main class="-mt-32">
-      <div class="max-w-7xl mx-auto pb-12 px-4 sm:px-6 lg:px-8">
+    <main class="-mt-32 flex-1 flex flex-col">
+      <div
+        class="max-w-7xl mx-auto pb-12 px-4 sm:px-6 lg:px-8 flex flex-col flex-1 h-full w-full"
+      >
         <!-- Replace with your content -->
-        <div class="bg-white rounded-lg shadow px-5 py-6 sm:px-6">
+        <div class="bg-white rounded-lg shadow px-5 py-6 sm:px-6 flex-1">
           <div class="h-96 border-4 border-dashed border-gray-200 rounded-lg" />
         </div>
         <!-- /End replace -->
